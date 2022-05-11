@@ -33,6 +33,12 @@ WHERE enclosures.closedForMaintenance = true;
 
 -- Extentions 2
 -- The name of the enclosure where the oldest animal lives. If there are two animals who are the same age choose the first one alphabetically.
+SELECT animals.name, animals.enclosure
+FROM animals
+INNER JOIN enclosures
+ON enclosures.id = animals.enclosure_id
+WHERE MAX(animals.age);
+
 
 -- Extentions 3
 -- The number of different animal types a given keeper has been assigned to work with.
