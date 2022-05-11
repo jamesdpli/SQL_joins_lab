@@ -23,6 +23,14 @@ FROM employees
 INNER JOIN enclosures
 ON employees.id = enclosures.id
 WHERE enclosures.closedForMaintenance = true;
+
+-- Will output the same table, but the headings will be more appropriatly named
+-- SELECT employees.name AS employee_name, enclosures.name AS enclosure_name, enclosures.closedformaintenance
+-- FROM employees
+-- INNER JOIN enclosures
+-- ON employees.id = enclosures.id
+-- WHERE enclosures.closedForMaintenance = true;
+
 -- Extentions 2
 -- The name of the enclosure where the oldest animal lives. If there are two animals who are the same age choose the first one alphabetically.
 
