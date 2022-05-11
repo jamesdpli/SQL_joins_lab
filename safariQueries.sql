@@ -16,9 +16,17 @@ INNER JOIN enclosures
 ON enclosures.id = assignments.enclosure_id
 WHERE enclosures.id = 1;
 
--- Extentions 
+-- Extentions 1
 -- The names of staff working in enclosures which are closed for maintenance
+
+-- Extentions 2
 -- The name of the enclosure where the oldest animal lives. If there are two animals who are the same age choose the first one alphabetically.
+
+-- Extentions 3
 -- The number of different animal types a given keeper has been assigned to work with.
+
+-- Extentions 4
 -- The number of different keepers who have been assigned to work in a given enclosure
+
+-- Extentions 5
 -- The names of the other animals sharing an enclosure with a given animal (eg. find the names of all the animals sharing the big cat field with Tony)
