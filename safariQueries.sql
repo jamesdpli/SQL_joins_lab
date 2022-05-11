@@ -18,7 +18,11 @@ WHERE enclosures.id = 1;
 
 -- Extentions 1
 -- The names of staff working in enclosures which are closed for maintenance
-
+SELECT employees.name, enclosures.name, enclosures.closedformaintenance
+FROM employees
+INNER JOIN enclosures
+ON employees.id = enclosures.id
+WHERE enclosures.closedForMaintenance = true;
 -- Extentions 2
 -- The name of the enclosure where the oldest animal lives. If there are two animals who are the same age choose the first one alphabetically.
 
